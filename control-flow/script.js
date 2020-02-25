@@ -9,7 +9,7 @@ var answer = isUserValid(true) ? "You may enter" : "You may not enter";
 var automatedAnswer =
   "your account # is " + (isUserValid(false) ? "1234" : "not available");
 
-
+// break basically "breaks out of the program"
 
 
 function moveCommand(direction) {
