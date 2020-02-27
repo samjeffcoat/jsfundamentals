@@ -24,3 +24,15 @@ const curriedMultiply = (a) => (b) => a * b;
 curriedMultiply(3);
 curriedMultiply(4)(3);
 const multiplyBy5 = curriedMultiply(5);
+
+
+// compose
+
+const compose = (f, g) => (a) => f(g(a));
+
+const sum = (num) => num + 1;
+
+
+compose(sum, sum)(5);
+
+// avoiding side effects and funtional purity
